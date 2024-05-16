@@ -5,7 +5,7 @@
 robocopy c:\transfer "C:\Users\username\Box\01. My Personal Folder\Transfer" /S /E /ZB /R:5 /W:0 /LOG:%UserProfile%\Backup-Box_robocopy_log.txt /XJ /NFL /MT:32 /TEE
 ```
 
-# Backing up data to box.com
+# The script below will backup your windows profile data to box.com account. Save the script called it "BackupBOX.bat"
 
 ```
 @echo off
