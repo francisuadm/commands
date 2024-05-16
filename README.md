@@ -78,9 +78,9 @@ CLS
 robocopy.exe %UserProfile% %UserDSTPath% /S /E /ZB /R:5 /W:0 /LOG:%UserProfile%\Backup-Box_robocopy_log.txt /XJ /NFL /XD Appdata Box Downloads OneDrive Searches "Saved Games" "3D Objects" “Temporary Internet Files” "VirtualBox VMs" ".*" OfficeFileCache Temp *cache* Spotify WER Box /XF *cache* NTUSER.* /MT:32 /TEE
 :end
 
- @echo.
+@echo.
 @echo. &
-@Echo Your profile folders is now backup to BOX cache folder.
+@Echo Your profile folders is now backing up to Box cache folder via Box Drive.
 @echo. &
 @echo The window -Backup.BOX folder shows all of the files/folders that was copied.
 @echo If all of the files/folders icons are showing with blue icon cloud then it's completely sync up to the BOX.COM, you can close this window.
@@ -102,6 +102,9 @@ exit /B
     del "%temp%\getadmin.vbs"
 exit /B
 ```
+
+#
+
 
 ###
 Manual way backing up to box.com, with box drive already installed.
