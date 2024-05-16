@@ -103,12 +103,11 @@ exit /B
 exit /B
 ```
 
-
-``
+###
 Manual way backing up to box.com, with box drive already installed.
 Make sure that folder called Transfer on your box.com under My Personal Folder 
 have been created first.
-``
+###
 ```
 robocopy c:\transfer "C:\Users\username\Box\01. My Personal Folder\Transfer" /S /E /ZB /R:5 /W:0 /LOG:%UserProfile%\Backup-Box_robocopy_log.txt /XJ /NFL /MT:32 /TEE
 ```
